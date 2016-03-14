@@ -1,3 +1,427 @@
 <!DOCTYPE html>  
 <script language="Javascript" src="Bio-data / exp.js "></script>
-<html>
+	<title>BIO-DATA</title>
+	<style>
+#header {
+	color: white;
+	background: black;
+	font-weight: bold;
+}
+
+#heading{
+	border: 1px solid white;
+}	
+
+#picture{
+	border: 2px solid black;
+	border-radius: 1px;
+	width: 101px
+}
+
+td {
+	border: 2px solid black;
+	border-radius: 7px;
+}
+
+input{
+	border:0;
+	outline:0;
+	background:transparent;
+	border-bottom: 1px solid black;
+}
+
+#form {
+	width: 75%;   
+	margin: auto;
+}
+
+.alignright {
+	float: right;
+}
+	</style>
+	</head>
+	<body>
+		<table align="center">
+			<tbody>
+			<tr>
+			<td width="435" id="heading"></td>
+			<td width="435" id="heading">
+			<h1> BIO DATA</h1></td>
+			<td id="picture" rowspan="2">
+			</td>
+			</tr>
+			<tr>
+			<td id="heading" colspan="2"></td>
+			</tr>
+			</tbody>
+		</table>
+		<br />
+		<table id="form">
+		<form></form>
+		<tbody>
+		<tr id="header">
+		<td colspan="2">&nbsp;&nbsp; PERSONAL DATA</td>
+		</tr>
+		<tr>
+		<td colspan="2">
+			&nbsp; &bull; Position Desired&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input name="Position" type="text" size="70"></input>
+			<span class="alignright"> 
+			&nbsp; &nbsp; Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :  <input name="Date" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; Name&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="Name" type="text" size="70">
+			<span class="alignright">
+			&nbsp; &nbsp; Gender &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="Gender" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; City Address    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :<input name="CityAddress" type="text" size="110">
+			<br>
+			&nbsp; &bull; Provincial Address &nbsp; &nbsp; : <input name="ProvincialAddress" type="text" size="110">
+			<br>
+			&nbsp; &bull; Telephone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="TelNo" type="text" size="70">
+			<span class="alignright">
+			&nbsp; &bull; Cellphone &nbsp; &nbsp; &nbsp; : <input name="CellNo" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; E-mail Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="Email" type="text" size="70">
+			<span class="alignright">
+			: <input type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; Date of Birth &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :
+			 <select name="birthmonth" required>
+				<option>Month</option>
+				<option value="Jan">January</option>
+				<option value="Feb">February</option>
+				<option value="Mar">March</option>
+				<option value="Apr">April</option>
+				<option value="May">May</option>
+				<option value="Jun">June</option>
+				<option value="Jul">July</option>
+				<option value="Aug">August</option>
+				<option value="Sep">September</option>
+				<option value="Oct">October</option>
+				<option value="Nov">November</option>
+				<option value="Dec">December</option>
+			</select>
+			<select name="birthday" required>
+				<option>Day</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			 <select name="birthyear" required>
+				<option value="year">Year</option>
+				<option value="1950">1950</option>
+				<option value="1951">1951</option>
+				<option value="1952">1952</option>
+				<option value="1953">1953</option>
+				<option value="1954">1954</option>
+				<option value="1957">1957</option>
+				<option value="1956">1956</option>
+				<option value="1957">1957</option>
+				<option value="1957">1957</option>
+				<option value="1959">1959</option>
+				<option value="1960">1960</option>
+				<option value="1961">1961</option>
+				<option value="1962">1962</option>
+				<option value="1963">1963</option>
+				<option value="1964">1964</option>
+				<option value="1965">1965</option>
+				<option value="1966">1966</option>
+				<option value="1967">1967</option>
+				<option value="1968">1968</option>
+				<option value="1969">1969</option>
+				<option value="1970">1970</option>
+				<option value="1971">1971</option>
+				<option value="1972">1972</option>
+				<option value="1973">1973</option>
+				<option value="1974">1974</option>
+				<option value="1975">1975</option>
+				<option value="1976">1976</option>
+				<option value="1977">1977</option>
+				<option value="1978">1978</option>
+				<option value="1979">1979</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1984">1984</option>
+				<option value="1985">1985</option>
+				<option value="1986">1986</option>
+				<option value="1987">1987</option>
+				<option value="1988">1988</option>
+				<option value="1989">1989</option>
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+			</select>
+			<span class="alignright">
+			&nbsp; &bull; Place of Birth : <input name="birthplace" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; Civil Status &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="civilstatus" type="text" size="57">
+			<span class="alignright">
+			&nbsp; &nbsp; Citizenship &nbsp; &nbsp; : <input name="citizenship" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; Height &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="height" type="text" size="57">
+			<span class="alignright">
+			&nbsp; &bull; Weight &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="weight" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; Religion &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input name="religion" type="text" size="57">
+			<br>
+			&nbsp; &bull; Spouse &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input name="spouse" type="text" size="57">
+			<span class="alignright">
+			&nbsp; &nbsp; Occupation &nbsp; &nbsp; : <input name="spouseoccupation" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; Name of Children &nbsp; &nbsp; &nbsp; : <input name="child1" type="text" size="57">
+			<span class="alignright">
+			&nbsp; &nbsp; Date of Birth &nbsp; : <input name="bdaychild1" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input name="child2" type="text" size="57">
+			<span class="alignright">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input name="bdaychild2" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input name="child2" type="text" size="57">
+			<span class="alignright">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input name="bdaychild2" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; Father's Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="father" type="text" size="57">
+			<span class="alignright">
+			&bull; Occupation &nbsp; &nbsp; : <input name="fatheroccupation" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &bull; Mother's Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input name="father" type="text" size="57">
+			<span class="alignright">
+			&bull; Occupation &nbsp; &nbsp; : <input name="motheroccupation" type="text" size="35">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; Language or dialect spoken or written : <input name="dialects" type="text" size="98">
+			<br>
+			&nbsp; &bull; Person to be contacted in case of emergency : <input name="emergencycontact" type="text" size="92">
+			<br>
+			&nbsp; &bull; His or her address and telephone : <input name="emergencydetails" type="text" size="103">
+		<br>
+		</td>
+		</tr>
+		<tr id="header">
+		<td colspan="2">&nbsp; &nbsp; EDUCATIONAL BACKGROUND</td>
+		</tr>
+		<tr>
+		<td colspan="2">
+			&nbsp; Elementary &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="elementary" type="text" size="100">
+			<span class="alignright"> 
+			Year Graduated : 
+				<select>
+				<option></option>
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				</select>&nbsp; &nbsp; &nbsp;
+			</span>
+			<br>
+			&nbsp; High School &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="highschool" type="text" size="100">
+			<span class="alignright">
+			Year Graduated : 
+				<select>
+				<option></option>
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				</select>&nbsp; &nbsp; &nbsp;
+				</span>
+			<br>
+			&nbsp; College &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="college" type="text" size="100">
+			<span class="alignright">
+			Year Graduated : 
+				<select>
+				<option></option>
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				</select>&nbsp; &nbsp; &nbsp; 
+				</span>
+			<br>
+			&nbsp; Degree Recieved &nbsp; &nbsp; &nbsp; &nbsp;: <input name="degree" type="text" size="100">
+			<br>
+			&nbsp; Special Skills &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input name="skills" type="text" size="111">
+		</td>
+		</tr>
+		<tr id="header">
+		<td colspan="2">&nbsp; &nbsp; EMPLOYMENT RECORD</td>
+		</tr>
+		<tr>
+		<td colspan="2">
+			&nbsp; &nbsp; Company Name : <input name="company1" type="text" size="116">
+			<br>
+			&nbsp; &nbsp; Position &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="position1" type="text" size="57">
+			From: <input name="position1start" type="text" size="19">
+			To: <input name="position1end" type="text" size="19">
+			<br><br>
+			&nbsp; &nbsp; Company Name : <input name="company2" type="text" size="116">
+			<br>
+			&nbsp; &nbsp; Position &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="position2" type="text" size="57">
+			From: <input name="position2start" type="text" size="19">
+			To: <input name="position2end" type="text" size="19">
+		</td>
+		</tr>
+		<tr id="header">
+		<td colspan="2">&nbsp; &nbsp; CHARACTER REFERENCE</td>
+		</tr>
+		<tr>
+		<td colspan="2">
+			&nbsp; &nbsp; Name &nbsp; &nbsp; : <input name="referencename1" type="text" size="64">
+			<span class="alignright"> 
+			&nbsp; Company Name: <input name="referencecompany1" type="text" size="38">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; Position : <input name="referenceposition1" type="text" size="64">
+			<span class="alignright">
+			&nbsp; Contact No. &nbsp; &nbsp; &nbsp;: <input name="referencecontact1" type="text" size="38">&nbsp; &nbsp; &nbsp;</span>
+			<br><br>
+			&nbsp; &nbsp; Name &nbsp; &nbsp; : <input name="referencename2" type="text" size="64">
+			<span class="alignright">
+			&nbsp; Company Name: <input name="referencecompany2" type="text" size="38">&nbsp; &nbsp; &nbsp;</span>
+			<br>
+			&nbsp; &nbsp; Position : <input name="referenceposition2" type="text" size="64">
+			<span class="alignright">
+			&nbsp; Contact No. &nbsp; &nbsp; &nbsp;: <input name="referencecontact2" type="text" size="38">&nbsp; &nbsp; &nbsp;</span>
+		</td>
+		</tr>
+		<tr>
+		<td width="50%">
+			&nbsp; &nbsp; Res. Cert. No. : <input name="rescertno" type="text" size="40">
+			<br>
+			&nbsp; &nbsp; Issued At &nbsp; &nbsp; &nbsp; &nbsp; : <input name="issuedat" type="text" size="40">
+			<br>
+			&nbsp; &nbsp; Issued On &nbsp; &nbsp; &nbsp; &nbsp;: <input name="issuedon" type="text" size="40">
+			<br>
+			&nbsp; &nbsp; SSS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="sss" type="text" size="40">
+			<br>
+			&nbsp; &nbsp; TIN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : <input name="tin" type="text" size="40">
+			<br>
+			&nbsp; &nbsp; NBI No. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: <input name="nbino" type="text" size="40">
+			<br>
+			&nbsp; &nbsp; Passport No.&nbsp; &nbsp;: <input name="passport" type="text" size="40">
+			</td>
+			<td width="50%" id="heading"><h5 align="justify"><input name="certification" type="checkbox" value="certtrue">I hereby certify that the above information is true and correct to the best of my knowledge and belief. I also understand that any misinterpretation will be considered reason for withdrawal of an offer or subsequent dismissal if employed.</h5>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		<div style="text-align:center font=:14">
+		<input type="submit" value="Submit">
+		<a href type="submit" value="Submit">Submit</input>
+		</div>
+	</body>
+</html>
